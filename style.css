@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F3F5FC;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+main{
+    display: flex;
+}
+
+.logo{
+    width: 31.085588455200195px;
+    margin: 40px 0 0 84px;
+    height: 48px;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+    position: absolute;
+    width: 680px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    padding-left: 10px;
+    color: #0A3871;
+}
+
+input::placeholder{
+    color: #0A3871;
+}
+
+
+
+
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 124.91px;
+    margin-top: 797px;
+}
+
+.informacao{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 16px;
+    
+}
+
+.informacao img{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.informacao p{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color:#495057;
+   
+}
+
+.botoes button{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19.36px;
+    align-items: center;
+    color: white;
+}
+
+.botoes button:nth-child(1){
+    background-color: #0A3871;
+    border: none;
+    margin-right: 24px;
+}
+
+.botoes button:nth-child(2){
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: darkblue;
+}
+
+aside{
+    background-color: white;
+    width: 400px;
+    height: 90vh;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
