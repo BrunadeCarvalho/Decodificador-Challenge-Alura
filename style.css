@@ -85,10 +85,22 @@ input::placeholder{
     margin-right: 24px;
 }
 
+.botoes button:nth-child(1):hover{
+    background-color: #679cdd;
+    border: 1px solid #679cdd;
+    color: white;
+}
+
 .botoes button:nth-child(2){
     background-color: #D8DFE8;
     border: 1px solid #0A3871;
-    color: darkblue;
+    color: #0A3871;
+
+}
+.botoes button:nth-child(2):hover{
+    background-color: #679cdd;
+    border: 1px solid #679cdd;
+    color: white;
 }
 
 aside{
@@ -126,10 +138,16 @@ aside{
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 19.36px;
-    color: darkblue;
+    color: #0A3871;
     background-color: white;
     border: 1px solid #0A3871;
     align-items: center;
+}
+
+#copiar:hover{
+    background-color: #679cdd;
+    border: 1px solid #679cdd;
+    color: white;
 }
 
 textarea{
