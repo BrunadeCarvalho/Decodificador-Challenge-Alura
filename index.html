@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    
     <title>Decodificador de textos</title>
 </head>
 <body>
     
     <main>
         <img src="./img/Vector.png" alt="logo da Alura" class="logo"/>
-        <input placeholder="Digite seu texto" type="text" name="input"/>
+        <input placeholder="Digite seu texto" type="text" name="input" id="texto-usuario"/>
         
         <div class="botoes">
             <div class="informacao">
@@ -20,45 +23,20 @@
                 <p>Apenas letras minúsculas e sem acento</p>
             </div>
             <div>
-                <button>Criptografar</button>
-<!--                 <button>Descriptografar </button>
- -->            </div>
+                <button id="criptografar">Criptografar</button>
+                <button id="descriptografar">Descriptografar </button>
+            </div>
         </div>
-    
-        <aside>
+        
+        <aside id="resultado">
+            <div class="texto">
+                <textarea  rows="18" cols="25" id="textoCriptografado"> </textarea>
+                <button id="copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
         </aside>
-
+        
     </main>
 
-    <script>
-        var input = document.querySelector("input")
-
-        function criptografia(){
-            const string = input.value;
-            let regexE= /e/gi
-            const novaString = string.replace(regexE, "enter");
-
-            let regexI = /i/gi
-            const novaStringI = novaString.replace(regexI, "imes")
-
-            let regexA = /a/gi
-            const novaStringA = novaStringI.replace(regexA, "ai")
-
-            let regexO = /o/gi
-            const novaStringO = novaStringA.replace(regexO, "ober")
-
-            let regexU = /u/gi
-            const novaStringU = novaStringO.replace(regexU, "ufat")
-
-            console.log(novaStringU)
-
-
-        }
-
-        var button = document.querySelector("button")
-        button.onclick = criptografia
-    </script>
-
-    
+    <script type="text/javascript" src="app.js"> </script> 
 </body>
 </html>
