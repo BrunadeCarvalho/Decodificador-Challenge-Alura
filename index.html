@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     
     <title>Decodificador de textos</title>
 </head>
@@ -23,20 +23,32 @@
                 <p>Apenas letras minúsculas e sem acento</p>
             </div>
             <div>
-                <button id="criptografar">Criptografar</button>
-                <button id="descriptografar">Descriptografar </button>
+                <button id="criptografar" onclick="demoDisplay()">Criptografar</button>
+                <button id="descriptografar" onclick="demoDisplay()">Descriptografar </button>
             </div>
         </div>
         
         <aside id="resultado">
             <div class="texto">
+                <div id="imagem-procurando" onclick="demoVisibility">
+                    <img src="./img/boneco.png" alt="Boneco procurando algo" />
+                    <h3>Nenhuma mensagem encontrada</h3>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
                 <textarea  rows="18" cols="25" id="textoCriptografado"> </textarea>
-                <button id="copiar" onclick="copiarTexto()">Copiar</button>
+                <button class="classeHidden" id="copiar" onclick="copiarTexto()">Copiar</button>
             </div>
         </aside>
         
     </main>
+    <footer>
+        <a href="https://github.com/BrunadeCarvalho" target="_blank"> <i class="fa-brands fa-github fa-xl"></i></a>
+        <a href="https://www.linkedin.com/in/bruna-carvalho-dev/" target="_blank"> <i class="fa-brands fa-linkedin fa-xl"></i></a>
+        <a href="mailto:brunacarvalho260697@gmail.com" target="_blank" rel="noreferrer"> <i class="fa-solid fa-envelope fa-xl"></i></a>
+    </footer>
 
     <script type="text/javascript" src="app.js"> </script> 
+    <script src="https://kit.fontawesome.com/dc48b99fae.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

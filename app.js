@@ -30,6 +30,7 @@ function criptografia(){
     limparAside()
     limparInput()
     mostrarResultado(novaStringU)
+    document.getElementById("copiar").classList.remove("classeHidden")
 
 }
 
@@ -82,6 +83,12 @@ function copiarTexto(){
 
     alert("Texto copiado!")
 }
+
+function demoDisplay(){
+    document.getElementById("imagem-procurando").style.display="none";
+}
+
+
 
 
 

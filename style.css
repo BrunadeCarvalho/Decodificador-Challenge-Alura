@@ -6,12 +6,13 @@
 body{
     background-color: #F3F5FC;
     width: 100vw;
-    height: 100vh;
 }
 
 
 main{
     display: flex;
+    width: 100%;    
+    height: 96vh;
 }
 
 .logo{
@@ -44,14 +45,13 @@ input::placeholder{
     display: flex;
     flex-direction: column;
     margin-left: 124.91px;
-    margin-top: 81vh;
+    margin-top: 80vh;
 }
 
 .informacao{
     display: flex;
     align-items: flex-end;
     margin-bottom: 16px;
-    
 }
 
 .informacao img{
@@ -63,8 +63,7 @@ input::placeholder{
 .informacao p{
     font-family: 'Inter', sans-serif;
     font-size: 12px;
-    color:#495057;
-   
+    color:#495057; 
 }
 
 .botoes button{
@@ -106,10 +105,8 @@ input::placeholder{
 aside{
     background-color: white;
     width: 400px;
-    height: 90vh;
-    position: absolute;
-    right: 40px;
-    top: 40px;
+    min-height: 90vh;
+    margin: 40px 0 40px 28%;
     border-radius: 32px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     display: flex;
@@ -117,6 +114,36 @@ aside{
     justify-content: center;
     align-items: center;
 }
+
+#imagem-procurando{
+    width: 336px;
+    display: flex;
+    flex-direction: column;
+
+}
+#imagem-procurando img{
+    height: 304.03070068359375px;
+    width: 335.97650146484375px;
+    margin-top: 200px;
+}
+
+#imagem-procurando h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin: 0 32px;
+    text-align: center;
+    color: #343A40;
+    font-size: 24px;
+}
+
+#imagem-procurando p{
+    font-family: 'Inter', sans-serif;
+    margin: 16px 32px 0 32px;
+    text-align: center;
+    color: #495057;
+    font-size: 16px;
+}
+
 
 .texto{
     display: flex;
@@ -129,7 +156,6 @@ aside{
 }
 
 #copiar{
-    display: flex;
     flex-direction: column;
     width: 328px;
     height: 67px;
@@ -162,5 +188,174 @@ button{
     cursor: pointer;
 }
 
+footer{
+    height: 4vh;
+    width: 100vw;
+    background-color: #0A3871;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer i{
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+}
 
 
+@media screen and (max-width: 770px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        min-height: 96vh;
+    }
+
+    .logo{
+        margin: 73.43px 0 0 40px;
+    }
+
+    input{
+        left: 40px;
+        top: 240px;
+    }
+
+    .botoes{
+        width: 100%;
+        margin-top: 582px;
+        margin-left: 40px;
+    }
+
+    .botoes button{
+        width: 350px;      
+    }
+
+    aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 730px;
+        min-height: 133px;
+        margin: 64px 0 40px 40px;
+        
+    }
+
+    #imagem-procurando{
+        width: 688px;
+        height: 133px;
+    }
+
+    #imagem-procurando img{
+        display: none;
+    }
+
+    footer{
+        width: 105vw;
+    }
+
+    textarea{
+        justify-content: center;
+        text-align: center;
+        width: 500px;
+        
+    }
+
+    #copiar{
+        width: 150px;
+        height: 20px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 96vh;
+    }
+
+    .logo{
+        margin: 24px 0 0 88px;
+        height: 60px;
+        width: 40px;
+    }
+
+    input{
+        left: 80px;
+        top: 153px;
+        font-size: 50px;
+        height: 70px;
+    }
+
+    .botoes{
+        width: 100%;
+        margin-top: 700px;
+        margin-left: 80px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .botoes button{
+        width: 600px;
+        height: 67px;
+        margin: 8px 0;
+        font-size: 25px;   
+    }
+
+    .informacao p{
+        font-size: 18px;
+    }
+    
+
+    aside{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        padding: 50px 0;
+        margin: 64px 0 40px 80px; 
+    }
+
+    #imagem-procurando{
+        width: 688px;
+        height: 133px;
+    }
+
+    #imagem-procurando img{
+        display: none;
+    }
+
+    #imagem-procurando p{
+        font-size: 22px;
+    }
+
+
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    textarea{
+        justify-content: center;
+        text-align: center;
+        height: 186px;
+        
+    }
+
+    #copiar{
+        width: 150px;
+        height: 20px;
+        padding: 20px;
+        justify-content: center;
+    }
+}
+
+.classeHidden{
+    display: none;
+}
