@@ -81,7 +81,19 @@ function copiarTexto(){
     //copiando o texto:
     document.execCommand("copy");
 
-    alert("Texto copiado!")
+    Toastify({
+        text: "Texto copiado com sucesso!",
+        className: "info",
+        style: {
+            background: "linear-gradient(to right, #00b4d8, #0077b6, #03045e)",
+            color: "white",
+        },
+        offset: {
+            x: 50, // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: 10 // vertical axis - can be a number or a string indicating unity. eg: '2em'
+          }
+      }).showToast();
+
 }
 
 function demoDisplay(){
